@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap');
+
+
+:root{
+    --blue: #1B4E8A;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+#nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid grey;
+
+}
+
+#header-img{
+    width: 30px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+
+}
+
+.logo-text{
+    font-size: 10px;
+    color: ;
+}
+
+
+.quick-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.quick-links li{
+    list-style: none;
+    margin-right: 10px;
+
+}
+
+.quick-links li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: auto 15px;
+    font-size: 11px;
+
+
+}
+
+
+main{
+    margin-top:40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+iframe{
+   height: 400px;
+   width:700px;
+}
+
+.hero{
+    margin-top: 120px;
+
+
+}
+
+.hero h1{
+    font-size: 50px;
+    line-height: 57px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    width: 700px;
+
+}
+
+.hero h3{
+    font-weight: 100;
+    margin-bottom: 20px;
+    width: 400px;
+
+}
+
+.hero button{
+
+    background-color: var(--blue);
+    border: none;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    color:white;
+}
+
+
+.landing-page{
+    margin-top: 95px;
+
+}
+
+.landing-page h2 {
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+
+.how-it-works{
+    margin-top: 95px;
+    margin-bottom: 95px;
+
+}
+
+.pricing-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+}
+
+.pricing-plan{
+    margin: 0 15px;
+    border: 3px solid var(--blue);;
+    border-top: 10px solid var(--blue);;
+
+}
+
+.info{
+    display: grid;
+    text-align: center;
+
+}
+
+.info h3{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.info button{
+    background-color: var(--blue);
+    border: none;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    color:white;
+}
+
+#subscribe{
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    width:100%;
+    text-align: center;
+    color: var(--blue);
+
+}
+
+#submit{
+    background-color: var(--blue);
+    border: none;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    color:white;
+    margin-top: 15px;
+}
+
+#email{
+    height: 38px;  
+    border-radius: 0; 
+    border: 1px solid grey;
+}
+
+@media (max-width: 700px){
+
+    #nav-bar{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        flex-shrink: 1;
+        justify-content: space-between;
+        background-color: white;;
+        width: 100%;
+        height: 40px;
+        border-bottom: 1px solid grey;
+    
+    }
+
+    .quick-links ul{
+        display: none;
+    }
+
+    .pricing-info{
+        display: flex;
+        flex-direction: column;    
+    }
+
+    main{
+        margin-top:40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+
+    .hero h1{
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        width: 100%;
+    
+    }
+
+    .hero h3{
+        font-weight: 100;
+        margin-bottom: 20px;
+        width: 100%;
+    
+    }
+
+    .pricing-plan{
+        margin: 0 auto 25px auto;
+        width: 250px;
+        border: 3px solid var(--blue);;
+        border-top: 10px solid var(--blue);;
+    
+    }
+
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
